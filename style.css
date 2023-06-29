@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#piano{
+    height: 290px;
+    padding: 90px 30px 0 30px;
+    background-color: #eeaeca;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0,0, 0.1);
+    position: relative;
+}
+
+#piano h1{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.keys{
+    position: relative;
+    display: flex;
+}
+
+
+.white{
+    width: 68px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+
+.black{
+    width: 38px;
+    height: 160px;
+    border-radius: 0px 0px 5px 5px ;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #000; 
+}
+
+.black:nth-child(2){
+    left: 48px;    
+}
+
+.black:nth-child(4){
+    left: 117px;
+}
+
+.black:nth-child(7){
+    left: 253px;
+}
+
+.black:nth-child(9){
+    left: 320px;
+}
+
+.black:nth-child(11){
+    left: 389px;
+}
+
+.black:nth-child(14){
+    left: 525px;
+}
+
+.black:nth-child(16){
+    left: 594px;
+}
+
+.black:nth-child(19){
+    left: 729px;
+}
+
+.black:nth-child(21){
+    left: 797px;
+}
+
+.black:nth-child(23){
+    left: 865px;
+}
+
+@media screen and (max-width:1060px) {
+    body{
+        transform: scale(0.6);
+    }   
+}
+
+@media screen and (max-width:630px) {
+    body{
+        transform: scale(0.4);
+    }   
+}
